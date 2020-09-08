@@ -139,16 +139,16 @@ footer {
 
 @keyframes bicycle_movement {
     15% {
-        transform: translateY(400px) translateX(-10px) scale(1);
+        transform: translateY(40vh) translateX(-10px) scale(1);
     }
     30% {
-        transform: translateY(400px) translateX(2000px) scale(1);
+        transform: translateY(40vh) translateX(2000px) scale(1);
     }
     45% {
-        transform: translateY(-500px) translateX(1000px) scale(0.25);
+        transform: translateY(-50vh) translateX(1000px) scale(0.25);
     }
     60% {
-        transform: translateY(-500px) translateX(-1100px) scale(0.25);
+        transform: translateY(-50vh) translateX(-1100px) scale(0.25);
     }
     75% {
         transform: translateY(0) translateX(-1100px) scale(0.25);
@@ -176,7 +176,7 @@ footer {
 
 .container {
     position: relative;
-    height: 700px;
+    height: 70vh;
     display: flex;
     font-size: 46px;
     font-weight: 600;
