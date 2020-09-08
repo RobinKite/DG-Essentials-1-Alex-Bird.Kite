@@ -527,7 +527,8 @@ input[type="radio"] {
     font-weight: 200;
 }
 
-@media (max-width: 1005px) {
+
+/* @media (max-width: 1005px) {
     body {
         max-width: 320px;
     }
@@ -563,4 +564,4 @@ input[type="radio"] {
         width: 300px;
         height: 280px;
     }
-}
+} */
