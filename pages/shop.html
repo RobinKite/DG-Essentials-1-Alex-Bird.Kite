@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="../images/icons/favicon.png" sizes="24x24">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Bicycle shop</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="../index.html" class="link header--link header--link-logo menu-link">velocity</a>
+        <a href="../pages/booking.html" class="link header--link header--link-bicycle">
+            <svg>
+                <use href="../images/icons/bicycle.svg#icon-bicycle"></use>
+            </svg> Book now!
+        </a>
+        <a href="../pages/shop.html" class="link header--link header--link-shop menu-link">shop</a>
+    </header>
+
+    <main>
+        <div class="container container-shop">
+            <p class="container--title container--title-shop">Shop</p>
+            <ul class="list container--list container--list-shop">
+                <li class="container--item container--item-acc"><a href="#" class="link container--link" onmouseover=" showImage(acc)" onmouseout="hideImage()">accessories</a></li>
+
+                <li class="container--item container--item-bic"><a href="#" class="link container--link" onmouseover=" showImage(bic)" onmouseout="hideImage()">bicycles</a></li>
+
+                <li class="container--item container--item-prot"><a href="#" class="link container--link" onmouseover=" showImage(prot)" onmouseout="hideImage()">protection</a></li>
+
+                <li class="container--item container--item-comp"><a href="#" class="link container--link" onmouseover=" showImage(comp)" onmouseout="hideImage()">components</a></li>
+
+                <li class="container--item container--item-cloth"><a href="#" class="link container--link" onmouseover=" showImage(cloth)" onmouseout="hideImage()">clothes</a></li>
+
+                <li class="container--item container--item-fram"><a href="#" class="link container--link" onmouseover=" showImage(fram)" onmouseout="hideImage()">frames</a></li>
+
+                <li class="container--item container--item-work"><a href="#" class="link container--link" onmouseover=" showImage(work)" onmouseout="hideImage()">workshop</a></li>
+
+            </ul>
+            <div id="imageholder">try hover</div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a href="../pages/news.html" class="link footer--link footer--link-news menu-link">news</a>
+        <a href="../pages/contacts.html" class="link footer--link footer--link-contacts menu-link">contacts</a>
+    </footer>
+
+    <script>
+        let acc = `url('../images/accessories-min.jpg')`;
+        let bic = `url('../images/bicycles-min.jpg')`;
+        let prot = `url('../images/protection-min.jpg')`;
+        let comp = `url('../images/components-min.jpg')`;
+        let cloth = `url('../images/clothing-min.jpg')`;
+        let fram = `url('../images/frames-min.jpg')`;
+        let work = `url('../images/workshop-min.jpg')`;
+
+        function showImage(x) {
+            document.getElementById('imageholder').style.backgroundImage = x;
+            document.getElementById('imageholder').style.color = 'transparent';
+        }
+
+        function hideImage() {
+            document.getElementById('imageholder').style.backgroundImage = `url('#')`;
+            document.getElementById('imageholder').style.color = 'black';
+        }
+    </script>
+
+</body>
+
+</html>
